@@ -1,0 +1,23 @@
+.categories-block .category-card {
+    
+    
+}
+
+.categories-block .category-card .c-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 180px;
+    background-color: coral;
+    background-image: url(../img/categories/bed-linen.png);
+    background-position: center center;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: inset 600px 600px rgba(0, 0, 0, 0.4);
+}
+
+.categories-block .category-card .c-card h3 {
+    text-align: center;
+    color: #F0F0F0;
+    font-family: 'Nunito', sans-serif;
+}
