@@ -1,23 +1,40 @@
-.categories-block .category-card {
-    
-    
-}
+
+/* categories block */
 
 .categories-block .category-card .c-card {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 180px;
-    background-color: coral;
-    background-image: url(../img/categories/bed-linen.png);
+    background-color: #8AB2B5;
     background-position: center center;
     background-size: cover;
     border-radius: 10px;
     box-shadow: inset 600px 600px rgba(0, 0, 0, 0.4);
+    padding: .5rem;
 }
 
 .categories-block .category-card .c-card h3 {
+    font-size: 1.5rem;
     text-align: center;
     color: #F0F0F0;
     font-family: 'Nunito', sans-serif;
 }
+/* categories cards background images */
+.categories-block .category-card .bed-linen {
+    background-image: url(../img/categories/bed-linen.png);
+}
+.categories-block .category-card .pillowcases {
+    background-image: url(../img/categories/pillowcases.png);
+}
+
+
+@media (max-width: 1199.98px) { 
+    .categories-block .category-card .c-card {
+         min-height: 140px; 
+    }
+
+    .categories-block .category-card .c-card h3 {
+        font-size: 1.2rem;
+    }
+ }
