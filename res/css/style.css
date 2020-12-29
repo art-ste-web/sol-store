@@ -1,4 +1,94 @@
+/*FONTS IMPORT*/
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&family=Nunito:wght@300;400;600;700&display=swap');
 
+
+/*VARIABLES*/
+:root {
+    /*fonts*/
+    --font-text: 'Nunito', sans-serif;
+    --font-header: 'Lora', serif;
+    /*colors*/
+    --color-text-black: #2B2B2B;
+    --color-text-white: #F0F0F0;
+    --color-dark-grey: #828282;
+    --color-light-grey: #AAAAAA;
+    --color-accent-button: #0AA2AC;
+    /*font sizes*/
+    --size-main-header: 2.25rem;
+    --size-product-xl: 1.5rem;
+
+}
+body {
+    color: var(--color-text-black);
+}
+
+h1 {
+    font-family: var(--font-header);
+    font-weight: 700;
+}
+/*HEADER*/
+.header-wrapper {
+    position: relative;
+}
+.header-nav {
+    font-family: var(--font-text);
+    color: var(--color-text-white);
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.header-nav .show {
+    background: #000;
+}
+.header-nav .nav-item {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-left: 3rem;
+    
+}
+
+.header-nav .navbar-nav {
+    margin-left: 5rem;
+}
+.header-nav a, .header-nav a:visited {
+    color: var(--color-text-white);
+}
+.header-nav a:hover {
+    text-shadow: 0 0 0.6px var(--color-text-white),
+                 0 0 0.6px var(--color-text-white);
+    text-shadow: 0 0 0.8px var(--color-text-white),
+                 0 0 0.8px var(--color-text-white);
+}
+.header-nav .navbar-toggler {
+    color: var(--color-text-white);
+}
+/*FIRST SCREEN*/
+.first-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(../img/first-screen-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 4000px 4000px rgba(0, 0, 0, .4);
+}
+.first-screen .logo-wrapper {
+    /* width: 520px;
+    background: url(../img/logo/transparent-logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%; */
+    text-align: center;
+}
+.first-screen .logo-wrapper h3 {
+    color: var(--color-text-white);
+    font-size: 1.1rem;
+    font-family: var(--font-text);
+}
 /* categories block */
 
 .categories-block .category-card .c-card {
@@ -18,7 +108,7 @@
     font-size: 1.5rem;
     text-align: center;
     color: #F0F0F0;
-    font-family: 'Nunito', sans-serif;
+    font-family: var(--text-font);
 }
 /* categories cards background images */
 .categories-block .category-card .bed-linen {
