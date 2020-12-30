@@ -39,19 +39,23 @@ h1 {
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 5000;
 }
 .header-nav .show {
-    background: #000;
+    background: rgba(0, 0, 0, .6);
 }
 .header-nav .nav-item {
     font-weight: 600;
     font-size: 1.1rem;
-    margin-left: 3rem;
+    margin-left: 2rem;
     
 }
 
 .header-nav .navbar-nav {
     margin-left: 5rem;
+}
+.header-nav .navbar-nav .phone-number{
+    color: var(--color-text-white);
 }
 .header-nav a, .header-nav a:visited {
     color: var(--color-text-white);
@@ -64,6 +68,10 @@ h1 {
 }
 .header-nav .navbar-toggler {
     color: var(--color-text-white);
+    background: var(--color-accent-button);
+    width: 3.5rem;
+    height: 2.5rem;
+    margin-right: 1rem;
 }
 /*FIRST SCREEN*/
 .first-screen {
