@@ -1,8 +1,8 @@
-/*FONTS IMPORT*/
+/*------------FONTS IMPORT--------------*/
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&family=Nunito:wght@300;400;600;700&display=swap');
 
 
-/*VARIABLES*/
+/*----------------VARIABLES---------------*/
 :root {
     /*fonts*/
     --font-text: 'Nunito', sans-serif;
@@ -13,27 +13,37 @@
     --color-dark-grey: #828282;
     --color-light-grey: #AAAAAA;
     --color-accent-button: #0AA2AC;
+    --color-price: #097178;
     /*font sizes*/
     --size-main-header: 2.25rem;
     --size-product-xl: 1.5rem;
 
 }
-/*ANIMATIONS*/
+/*-----------------ANIMATIONS---------------------*/
 @keyframes first-screen-bg-breathe {
     0% {background-size: 100% auto;}
     50%{background-size: 120% auto;}
     100%{background-size: 100% auto;}
 }
-
+/*----------GLOBAL CSS---------*/
 body {
     color: var(--color-text-black);
 
 }
 
-h1 {
+h1, h2, h3, h4, h5 {
     font-family: var(--font-header);
     font-weight: 700;
 }
+
+a, a:visited, a:active {
+    color: var(--color-text-black);
+}
+
+p {
+    font-family: var(--font-text);
+}
+
 /*------------------HEADER---------------------*/
 .header-wrapper {
     position: relative;
@@ -152,10 +162,10 @@ h1 {
     width: 1.5rem;
 }
 /*---------------------CATALOG--------------------*/
-.catalog-block h1 {
+.content-block h2 {
     font-size: 2.25rem;
-    margin-bottom: 2rem;
-    margin-top: 3.75rem;
+    margin-bottom: 1.6rem;
+    margin-top: 3rem;
 }
 
 /* categories block */
@@ -195,33 +205,197 @@ h1 {
 }
 /* categories cards background images */
 .categories-block .category-card .bed-linen {
-    background-image: url(../img/categories/bed-linen.png);
+    background-image: url(../img/categories/bed-linen.jpg);
 }
 .categories-block .category-card .pillowcases {
-    background-image: url(../img/categories/pillowcases.png);
+    background-image: url(../img/categories/pillowcases.jpg);
 }
 .categories-block .category-card .covers {
-    background-image: url(../img/categories/covers.png);
+    background-image: url(../img/categories/covers.jpg);
 }
 .categories-block .category-card .towels {
-    background-image: url(../img/categories/towels.png);
+    background-image: url(../img/categories/towels.jpg);
 }
 .categories-block .category-card .carpets {
-    background-image: url(../img/categories/carpets.png);
+    background-image: url(../img/categories/carpets.jpg);
 }
 .categories-block .category-card .bathrobes {
-    background-image: url(../img/categories/bathrobes.png);
+    background-image: url(../img/categories/bathrobes.jpg);
 }
 
 /*--------------------ABOUT------------------------*/
-.about-block .about-us {
-    background: url(../img/about/about-us.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
+
+.about-block .about-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-text-white);
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    background-size: 100% !important;
     border-radius: 10px;
     min-height: 200px;
+    margin-top: 1.8rem;
+    padding: 2rem;
+    box-shadow: inset 1000px 1000px rgba(0, 0, 0, .4);
+    cursor: pointer;
+    transition: background-size .3s;
+}
+.about-block .about-card:hover {
+    background-size: 110% !important;
+    box-shadow: inset 1000px 1000px rgba(0, 0, 0, .6);
+    transition: background-size .3s;
+}
+.about-block .about-us {
+    background: url(../img/about/about-us.jpg);
+}
+.about-block .about-cloth {
+    background: url(../img/about/about-cloth.jpg);
+}
+.about-block .about-card h3 {
+    font-family: var(--font-header);
+    font-weight: 700;
+    font-size: 2rem;
+}
+.about-block .about-card p {
+    font-family: var(--font-text);
+    line-height: 1.2;
+}
+.about-block .about-card a button {
+    width: 11.5rem;
+    height: 2.4rem;
+    border-radius: 1.5rem;
+    background: var(--color-accent-button);
+    color: var(--color-text-white);
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    transition: all .2s;
+    
+}
+.about-block .about-card a button:hover {
+    transform: scale(1.08);
+    transition: all .2s;
 }
 
+/*---------------PRODUCTS-----------------*/
+
+.products .product-card img {
+    width: 100%;
+    border-radius: 10px;
+    position: relative;
+    
+}
+.products .product-data {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-16%, -50%);
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    padding: 1rem;
+    font-family: var(--font-text);
+    opacity: 0;
+    transition: all .25s;
+}
+.products .product-card:hover .product-data {
+    opacity: 1;
+    transition: all .25s;
+}
+.products .product-data .color-vars {
+    display: flex;
+    margin-bottom: .5rem;
+}
+
+.products .product-data .color-vars .color {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    margin-right: .5rem;
+}
+.products .product-data .color-vars .color-1 {
+    background-color:#C69518;       
+}
+.products .product-data .color-vars .color-2 {
+    background-color:#745743;       
+}
+.products .product-data .color-vars .color-3 {
+    background-color:#2D4686;       
+}
+
+.products .product-data h3 {
+    font-size: 1.1rem;
+    font-family: var(--font-text);
+    font-weight: 700;
+    margin-bottom: 0;
+    line-height: 1;
+}
+.products .product-data p {
+    font-size: .9rem;
+    color: #828282;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    line-height: 1;
+}
+.products .product-data .price {
+    font-size: 1.5rem;
+    color: var(--color-price);
+}
+/*-------------ADVANTAGES---------------*/
+.advantages {
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+}
+.advantages img {
+    display: block;
+    margin: 0 auto;
+}
+.advantages p {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+}
+
+/*-------------FOOTER------------------*/
+.footer {
+    background: #111;
+    padding: 3rem;
+    color: var(--color-text-white); 
+}
+.footer a {
+    color: var(--color-text-white);
+}
+.footer h4 {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.footer p {
+    font-weight: 300;
+    width: 80%;
+}
+.footer p b {
+    font-weight: 700;
+}
+.footer ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.footer ul li {
+    color: var(--color-text-white);
+    margin-top: .5rem;
+}
+.footer .social-links {
+    margin-top: 1rem;
+}
+.footer .social-links a {
+    text-decoration: none;
+    margin-right: 1rem;
+}
+.footer .social-links a img {
+    height: 2.4rem;
+    width: 2.4rem;
+}
 
 
 @media (max-width: 1199.98px) { 
