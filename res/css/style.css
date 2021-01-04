@@ -34,7 +34,7 @@ h1 {
     font-family: var(--font-header);
     font-weight: 700;
 }
-/*HEADER*/
+/*------------------HEADER---------------------*/
 .header-wrapper {
     position: relative;
 }
@@ -81,7 +81,7 @@ h1 {
     height: 2.5rem;
     margin-right: 1rem;
 }
-/*FIRST SCREEN*/
+/*----------------------FIRST SCREEN------------------*/
 .first-screen {
     display: flex;
     flex-direction: column;
@@ -151,7 +151,7 @@ h1 {
     height: 1.5rem;
     width: 1.5rem;
 }
-/*CATALOG*/
+/*---------------------CATALOG--------------------*/
 .catalog-block h1 {
     font-size: 2.25rem;
     margin-bottom: 2rem;
@@ -165,6 +165,7 @@ h1 {
     justify-content: center;
     align-items: center;
     min-height: 180px;
+    margin-bottom: 1rem;
     background-color: #8AB2B5;
     background-position: center center;
     background-size: cover;
@@ -173,6 +174,11 @@ h1 {
     padding: .5rem;
     cursor: pointer;
     transition: all .25s;
+}
+.categories-block .category-card .c-card:after{
+    content: '';
+    display: block;
+    padding-bottom: 100%;
 }
 .categories-block .category-card .c-card:hover {
     transform: translateY(-.5rem);
@@ -203,6 +209,20 @@ h1 {
 .categories-block .category-card .carpets {
     background-image: url(../img/categories/carpets.png);
 }
+.categories-block .category-card .bathrobes {
+    background-image: url(../img/categories/bathrobes.png);
+}
+
+/*--------------------ABOUT------------------------*/
+.about-block .about-us {
+    background: url(../img/about/about-us.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 10px;
+    min-height: 200px;
+}
+
+
 
 @media (max-width: 1199.98px) { 
     .categories-block .category-card .c-card {
