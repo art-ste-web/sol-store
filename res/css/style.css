@@ -442,6 +442,10 @@ p {
         transform: none;
         padding-left: 0;
     }
+    .products .product-data p {
+        margin-top: .25rem;
+        margin-bottom: .25rem;
+    }
   }
 
   @media (max-width: 576px) {
