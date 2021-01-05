@@ -25,6 +25,12 @@
     50%{background-size: 120% auto;}
     100%{background-size: 100% auto;}
 }
+
+@keyframes first-screen-bg-breathe-mob {
+    0% {background-size: auto 100%;}
+    50%{background-size: auto 120%;}
+    100%{background-size: auto 100%;}
+}
 /*----------GLOBAL CSS---------*/
 body {
     color: var(--color-text-black);
@@ -397,7 +403,7 @@ p {
     width: 2.4rem;
 }
 
-
+/*-----------MEDIAQUERIES-----------*/
 @media (max-width: 1199.98px) { 
     .categories-block .category-card .c-card {
          min-height: 140px; 
@@ -407,3 +413,50 @@ p {
         font-size: 1.2rem;
     }
  }
+
+ @media (max-width: 769px) {
+
+    .first-screen {
+        background-size: auto 100%;
+        animation: first-screen-bg-breathe-mob 30s linear infinite;
+    }
+
+
+    .categories-block .category-card .c-card h3 {
+        font-size: 1.8rem;
+    }
+
+    .products .product-card {
+        margin-top: 2rem;
+    }
+    .products .product-data {
+        position: static;
+        opacity: 1;
+        background: none;
+        transform: none;
+        padding-left: 0;
+    }
+  }
+
+  @media (max-width: 380px) {
+    .first-screen .title-wrapper h3 {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    .categories-block .category-card .c-card h3 {
+        font-size: 1.4rem;
+    }
+
+    .about-block .about-card {
+        padding: 1rem;
+    }
+    .about-block .about-card h3 {
+        font-size: 1.6rem;
+    }
+    .about-block .about-card p {
+        font-size: .8rem;
+        line-height: 1.1;
+        width: 100%;
+    }
+  }
