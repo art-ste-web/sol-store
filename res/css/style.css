@@ -355,10 +355,9 @@ p {
 }
 .advantages img {
     display: block;
-    margin: 0 auto;
+    margin: 1rem auto .5rem auto;
 }
 .advantages p {
-    margin-top: 1rem;
     font-size: 1.1rem;
 }
 
@@ -449,6 +448,16 @@ p {
   }
 
   @media (max-width: 576px) {
+
+    .content-block  h2  {
+        font-size: 1.8rem;
+        margin-bottom: .25rem;
+    }
+
+    .categories-block {
+        margin-top: 1rem;
+    }
+    
     .first-screen .title-wrapper h3 {
         font-size: 1rem;
         font-weight: 400;
