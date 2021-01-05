@@ -426,6 +426,12 @@ p {
         font-size: 1.8rem;
     }
 
+    .about-block .about-card {
+        padding: 1rem;
+        background-size: 110% !important;
+        box-shadow: inset 1000px 1000px rgba(0, 0, 0, .5);
+    }
+
     .products .product-card {
         margin-top: 2rem;
     }
@@ -448,11 +454,7 @@ p {
         font-size: 1.4rem;
     }
 
-    .about-block .about-card {
-        padding: 1rem;
-        background-size: 110% !important;
-        box-shadow: inset 1000px 1000px rgba(0, 0, 0, .5);
-    }
+    
     .about-block .about-card h3 {
         font-size: 1.6rem;
     }
