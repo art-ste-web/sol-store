@@ -438,7 +438,7 @@ p {
     }
   }
 
-  @media (max-width: 380px) {
+  @media (max-width: 576px) {
     .first-screen .title-wrapper h3 {
         font-size: 1rem;
         font-weight: 400;
