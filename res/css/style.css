@@ -32,8 +32,13 @@
     100%{background-size: auto 100%;}
 }
 /*----------GLOBAL CSS---------*/
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     color: var(--color-text-black);
+    
 
 }
 
@@ -50,7 +55,39 @@ p {
     font-family: var(--font-text);
 }
 
+
 /*------------------HEADER---------------------*/
+
+.main-navigation {
+    font-family: var(--font-text);
+    color: var(--color-text-white);
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    /* justify-content: space-between; */
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5000;
+}
+.main-navigation .logo img {
+    width: 4.4rem;
+    height: 4.4rem;
+    margin: .5rem;
+}
+
+.main-navigation nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+.main-navigation nav ul li {
+    margin-left: 2rem;
+    color: var(--color-text-white);
+}
+
+
+
+
 .header-wrapper {
     position: relative;
 }
@@ -168,6 +205,7 @@ p {
     width: 1.5rem;
 }
 /*---------------------CATALOG--------------------*/
+
 .content-block h2 {
     font-size: 2.25rem;
     margin-bottom: 1.6rem;
@@ -414,6 +452,23 @@ p {
  }
 
  @media (max-width: 769px) {
+    /*-----------HEADER------------*/
+
+    .main-navigation {
+        background-color: #000000;
+        height: auto;
+        flex-direction: row;
+    }
+    
+    .main-navigation nav ul {
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: #000000;
+    }
+
 
     .first-screen {
         background-size: auto 100%;
