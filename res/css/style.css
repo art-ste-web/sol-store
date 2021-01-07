@@ -82,12 +82,15 @@ p {
 
 .main-navigation nav ul {
     display: flex;
+    justify-content: flex-end;
     flex-direction: row;
     list-style-type: none;
     margin-bottom: 0;
+    padding-left: 0;
 }
 .main-navigation nav ul li {
-    margin-left: 2rem;
+    font-size: 1rem;
+    margin-left: 1.8rem;
     color: var(--color-text-white);
 }
 .main-navigation .cart-block {
@@ -107,11 +110,17 @@ p {
     border-radius: 5px;
     background: var(--color-accent-button);
 }
-.main-navigation .cart-block .mob-menu-btn img,
-.main-navigation .cart-block .close-mob-menu-btn img {
+.main-navigation .cart-block .mob-menu-btn img {
     width: 1.5rem;
     height: 1.5rem;
 }
+.main-navigation .cart-block .close-mob-menu-btn img {
+    width: 2rem;
+    height: 2rem;
+}
+
+
+
 
 
 
@@ -468,7 +477,7 @@ p {
 }
 
 /*-----------MEDIAQUERIES-----------*/
-@media (max-width: 1199.98px) { 
+@media  (max-width: 1199.98px) { 
     .categories-block .category-card .c-card {
          min-height: 140px; 
     }
@@ -477,12 +486,14 @@ p {
         font-size: 1.2rem;
     }
  }
-
- @media (max-width: 1024px) {
+ 
+ 
+ 
+ @media (max-width: 960px) {
     /*-----------HEADER------------*/
 
     .main-navigation {
-        background-color: #000000;
+        background-color: rgba(0, 0, 0, .9);
         height: auto;
         flex-direction: row;
     }
@@ -494,13 +505,18 @@ p {
         display: none;
     }
 
-    .main-navigation nav ul {
+    .main-navigation .nav-mobile ul {
         flex-direction: column;
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
+        padding: 1rem;
+        padding-left: 2rem;
         background: rgba(0, 0, 0, .9);
+    }
+    .main-navigation .nav-mobile ul li {
+        margin-bottom: .5rem;
     }
 
     .main-navigation .cart-block .mob-menu-btn {
@@ -547,6 +563,21 @@ p {
         margin-bottom: .25rem;
     }
   }
+
+  @media screen and (min-width: 960px) and (max-width:1140px) {
+    .main-navigation nav ul li {
+        font-size: .7rem;
+        margin-left: 1.4rem;
+    }
+  }
+  @media screen and (min-width: 720px) and (orientation: landscape) {
+    .first-screen {
+        background-size: 100% auto;
+        animation: first-screen-bg-breathe 30s linear infinite;
+    }
+  }
+
+  
 
   @media (max-width: 576px) {
 
