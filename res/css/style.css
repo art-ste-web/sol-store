@@ -478,7 +478,7 @@ p {
     }
  }
 
- @media (max-width: 769px) {
+ @media (max-width: 1024px) {
     /*-----------HEADER------------*/
 
     .main-navigation {
