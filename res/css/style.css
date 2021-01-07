@@ -170,6 +170,12 @@ p {
     height: 2.5rem;
     margin-right: 1rem;
 }
+
+/**********************************/
+/*************MAIN PAGE************/
+/*********************************/
+
+
 /*----------------------FIRST SCREEN------------------*/
 .first-screen {
     display: flex;
@@ -249,7 +255,9 @@ p {
 }
 
 /* categories block */
-
+.categories-block a {
+    text-decoration: none;
+}
 .categories-block .category-card .c-card {
     display: flex;
     justify-content: center;
