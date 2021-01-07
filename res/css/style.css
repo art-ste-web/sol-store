@@ -59,6 +59,7 @@ p {
 /*------------------HEADER---------------------*/
 
 .main-navigation {
+    align-items: center;
     font-family: var(--font-text);
     color: var(--color-text-white);
     background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
@@ -75,16 +76,42 @@ p {
     margin: .5rem;
 }
 
+.main-navigation .nav-mobile {
+    display: none;
+}
+
 .main-navigation nav ul {
     display: flex;
     flex-direction: row;
     list-style-type: none;
+    margin-bottom: 0;
 }
 .main-navigation nav ul li {
     margin-left: 2rem;
     color: var(--color-text-white);
 }
-
+.main-navigation .cart-block {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.main-navigation .cart-block .cart img {
+    height: 2rem;
+    width: 2rem;
+}
+.main-navigation .cart-block .mob-menu-btn,
+.main-navigation .cart-block .close-mob-menu-btn {
+    display: none;
+    width: 55px;
+    height: 40px;
+    border-radius: 5px;
+    background: var(--color-accent-button);
+}
+.main-navigation .cart-block .mob-menu-btn img,
+.main-navigation .cart-block .close-mob-menu-btn img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
 
 
 
@@ -459,16 +486,35 @@ p {
         height: auto;
         flex-direction: row;
     }
-    
+    .main-navigation .nav-desktop {
+        display: none;
+    }
+    .main-navigation .nav-mobile {
+        
+        display: none;
+    }
+
     .main-navigation nav ul {
         flex-direction: column;
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
-        background: #000000;
+        background: rgba(0, 0, 0, .9);
     }
 
+    .main-navigation .cart-block .mob-menu-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1.5rem;
+    }
+    .main-navigation .cart-block .close-mob-menu-btn {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1.5rem;
+    }
 
     .first-screen {
         background-size: auto 100%;
