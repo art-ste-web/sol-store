@@ -171,9 +171,9 @@ p {
     margin-right: 1rem;
 }
 
-/**********************************/
-/*************MAIN PAGE************/
-/*********************************/
+/************************************/
+/************* MAIN PAGE ************/
+/***********************************/
 
 
 /*----------------------FIRST SCREEN------------------*/
@@ -483,6 +483,37 @@ p {
     height: 2.4rem;
     width: 2.4rem;
 }
+
+
+/*****************************************/
+/*************  CATEGORY PAGE ************/
+/*****************************************/
+.category-header {
+    color: var(--color-text-white);
+    padding-top: 6rem;
+    background: url(../img/categories/category-header/bed-linen.JPEG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    box-shadow: inset 3000px 3000px rgba(0, 0, 0, .6);
+}
+.category-header .category-title-wrapper {
+    padding: 1.5rem;
+}
+.category-header .category-title-wrapper p {
+    margin-top: 1rem;
+    width: 80%;
+}
+.content-block .bread-crumbs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+
 
 /*-----------MEDIAQUERIES-----------*/
 @media  (max-width: 1199.98px) { 
