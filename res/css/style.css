@@ -70,6 +70,7 @@ p {
     left: 0;
     z-index: 5000;
 }
+
 .main-navigation .logo img {
     width: 4.4rem;
     height: 4.4rem;
@@ -540,6 +541,7 @@ p {
     border: 1px solid #AAAAAA;
     font-family: var(--font-text);
     border-radius: 3px;
+    background: transparent;
 }
 
 /*category product cards*/
@@ -589,6 +591,15 @@ p {
     cursor: pointer;
 }
 
+
+
+/*****************************************/
+/************* PRODUCT PAGE ************/
+/*****************************************/
+
+.product-header {
+    background-color: #111;
+}
 
 /*---------------------------------------------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------------------*/
