@@ -21,3 +21,4 @@ if(closeMenuBtn) {
         console.log("hide menu");
     })
 }
+

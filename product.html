@@ -26,10 +26,10 @@
               <ul>
                 <a href="index.html"><li>Главная</li></a>
                 <a href="index.html#catalog"><li>Каталог</li></a>
-                <a href=""><li>О нас</li></a>
-                <a href=""><li>О тканях</li></a>
-                <a href=""><li>Доставка</li></a>
-                <a href=""><li>Контакты</li></a>
+                <a href="about-us.html"><li>О нас</li></a>
+                <a href="#"><li>О тканях</li></a>
+                <a href="#"><li>Доставка</li></a>
+                <a href="#"><li>Контакты</li></a>
                 <a href="tel:+3809912345678"><li><img class="phone-icon" src="res/img/icons/phone-icon.svg">+3809912345678</li></a>
                 <a href=""><li><img src="res/img/icons/search-icon.svg" alt=""></li></a>
               </ul>
@@ -50,11 +50,11 @@
             <nav class="nav-mobile">
               <ul>
                 <a href="index.html"><li>Главная</li></a>
-                <a href=""><li>Каталог</li></a>
-                <a href=""><li>О нас</li></a>
-                <a href=""><li>О тканях</li></a>
-                <a href=""><li>Доставка</li></a>
-                <a href=""><li>Контакты</li></a>
+                <a href="index.html#catalog"><li>Каталог</li></a>
+                <a href="about-us.html"><li>О нас</li></a>
+                <a href="#"><li>О тканях</li></a>
+                <a href="#"><li>Доставка</li></a>
+                <a href="#"><li>Контакты</li></a>
                 <a href="tel:+3809912345678"><li><img class="phone-icon" src="res/img/icons/phone-icon.svg">+3809912345678</li></a>
                 <a href=""><li><img src="res/img/icons/search-icon.svg" alt=""></li></a>
               </ul>
@@ -67,37 +67,51 @@
     </div>
 
     
-    <!-- BREAD CRUMBS AND SORT -->
+    <!-- PRODUCT DATA -->
     <div class="container content-block">
         <div class="row single-product">
-          <div class="col-12 col-md-12 col-lg-6 col-xl-6">
+          <!-- product images -->
+          <div class="col-12 col-md-12 col-lg-6 col-xl-6 px-4">
             <div class="product-img">
               <img src="res/img/products/pdoduct-2.jpg" alt="">
+              <div class="browse-btn">
+                <img src="res/img/icons/search-icon-black.svg" alt="">
+              </div>
             </div>
             <div class="product-gallery">
-              <img src="res/img/products/pdoduct-2.jpg" alt="">
-              <img src="res/img/products/pdoduct-2.jpg" alt="">
-              <img src="res/img/products/pdoduct-2.jpg" alt="">
+              <div class="gallery-img"></div>
+              <div class="gallery-img inactive-img"></div>
+              <div class="gallery-img inactive-img"></div>
             </div>
             
           </div>
-          <div class="col-12 col-md-12 col-lg-6 col-xl-6">
-            <p>Главная  /  Постельное белье</p>
+
+          <!-- product data -->
+          <div class="col-12 col-md-12 col-lg-6 col-xl-6 product-data">
+            <p class="bread-crumbs">Главная / Постельное белье / Комплект Oxford Tan Standart</p>
             <h1>Комплект Oxford Tan Standart</h1>
-            <p class="price-vars">1720₴ - 2925₴</p>
-            <p class="short-description"></p>
-            <div class="chars">
+            <p class="price">1720₴ - 2925₴</p>
+            <p class="short-description">
+              Этот комплект универсально впишется в современную спальню 
+              квартиры и загородного дома.
+            </p>
+            <div class="variations">
               <label for="size-select">Размер</label>
               <select name="" id="size-select">
                 <option>Евро двуспальный</option>
                 <option>Полуторный</option>
               </select>
             </div>
-            <div class="chars">
+            <div class="variations">
               <label for="color-select">Цвет</label>
-              <div>
-                <input type="radio" name="color" id="color-1">
-                <input type="radio" name="color" id="color-2">
+              <div class="colors">
+                <div class="color-item  selected-color">
+                  <div class="color color-1"></div>
+                </div>
+                <div class="color-item">
+                  <div class="color color-2"></div>
+                </div>
+                
               </div>
             </div>
             <p>
@@ -108,16 +122,39 @@
             <p class="price">2145₴</p>
             <input type="text" name="" id="" value="1" maxlength="2">
             <button class="add-to-cart-btn">В корзину</button>
-            <p>Артикул: BL-1</p>
-            <p>Категория: <a href="category.html">Постельное белье</a></p>
-            
+            <p class="product-art">Артикул: BL-1</p>
+            <p class="product-cat">Категория: <a href="category.html">Постельное белье</a></p>
+          </div>
+        </div>
+
+        <!-- product tabs -->
+        <div class="row product-tabs">
+          <div class="col-12 col-md-12 col-lg-12 col-xl-12 px-4 tab-name">
+            <div class="tab-title active-tab">Описание</div>
+            <div class="tab-title">Детали</div>
+            <div class="tab-title">Уход</div>
+            <div class="tab-title">Отзывы</div>
+          </div>
+          <div class="col-12 col-md-12 col-lg-12 col-xl-12 px-4 tab-text">
+            <div class="tab-content tab-text-1">
+              <p>
+                Комплект постельного белья из мягчайшего хлопка плетения перкаль перенесет вас
+                на бескрайние лавандовые поля, подарив ощущение свежести и легкости во время сна.
+                Эта прочная гипоаллергенная ткань с гладкой бархатистой поверхностью превзойдет
+                роскошное постельное белье любого шикарного отеля в Провансе и точно вдохновит
+                вас на романтическое путешествие.
+              </p>
+          </div>
+            <div class="tab-content tab-text-2"></div>
+            <div class="tab-content tab-text-3"></div>
+            <div class="tab-content tab-text-4"></div>
           </div>
         </div>
         
                
         <!-- ABOUT -->
         <div class="row about-block">
-            <div class="col-12 col-lg-6 col-xl-6 px-2">
+            <div class="col-12 col-lg-6 col-xl-6 px-4">
               <div class="about-card about-us">
                 <h3 class="text-center">О нас</h3>
                 <p>
@@ -125,12 +162,12 @@
                    это о любви. С 2016 года мы работаем и совершенствуемся для тех, кто ценит комфорт
                   и стремится к уюту и гармонии. 
                 </p>
-                <a href="">
+                <a href="about-us.html">
                   <button>Узнать больше</button>
                 </a>
               </div>
             </div>
-            <div class="col-12 col-lg-6 col-xl-6 px-2">
+            <div class="col-12 col-lg-6 col-xl-6 px-4">
               <div class="about-card about-cloth">
                 <h3 class="text-center">О наших тканях</h3>
                 <p>
@@ -138,7 +175,7 @@
                   мы объездили полмира и нашли лучшие натуральные ткани, чтобы подарить Вам о-настоящему 
                   здоровый и крепкий сон и нашу заботу.
                 </p>
-                <a href="">
+                <a href="about-us.html">
                   <button>Узнать больше</button>
                 </a>
               </div>
@@ -162,12 +199,12 @@
         <div class="col-12 col-lg-3 col-xl-3">
           <h4>Каталог товаров</h4>
           <ul>
-            <a href=""><li>Постельное белье</li></a>
-            <a href=""><li>Наволочки и простыни</li></a>
-            <a href=""><li>Покрывала и пледы</li></a>
-            <a href=""><li>Полотенца</li></a>
-            <a href=""><li>Коврики</li></a>
-            <a href=""><li>Халаты</li></a>
+            <a href="category.html"><li>Постельное белье</li></a>
+            <a href="category.html"><li>Наволочки и простыни</li></a>
+            <a href="category.html"><li>Покрывала и пледы</li></a>
+            <a href="category.html"><li>Полотенца</li></a>
+            <a href="category.html"><li>Коврики</li></a>
+            <a href="category.html"><li>Халаты</li></a>
           </ul>
         </div>
         <div class="col-12 col-lg-3 col-xl-3">
@@ -185,7 +222,7 @@
             +38(099)12345678
           </a>
           <div class="social-links">
-            <a href="">
+            <a href="https://www.instagram.com/some.of.love.ua/">
               <img src="res/img/icons/instagram.svg" alt="">
             </a>
             <a href="">
