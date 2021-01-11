@@ -682,6 +682,8 @@ p {
 .single-product .product-data .variations select {
     border: 1px solid #AAAAAA;
     border-radius: 3px;
+    background: transparent;
+    height: 2.4rem;
 }
 .single-product .product-data .variations select:focus {
     outline: none;
@@ -966,5 +968,10 @@ p {
 
     .category-header .category-title-wrapper p {
         width: 100%;
+    }
+
+    .single-product .product-gallery .gallery-img {
+        height: 6rem;
+        width: 6rem;
     }
   }
