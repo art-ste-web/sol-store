@@ -337,6 +337,86 @@ p {
     background-image: url(../img/categories/bathrobes.jpg);
 }
 
+/*----------------------CATALOG V2------------------*/
+.content-block .rooms-categories-block a {
+    display: block;
+}
+.content-block .rooms-categories-block a .room-category-card {
+    background: #bdbdbd;
+    border-radius: 10px;
+    min-height: 200px;
+    margin-top: 2rem;
+    position: relative;
+    box-shadow: inset 1000px 100px rgba(0, 0, 0, .3);
+}
+/*cards background*/
+.content-block .rooms-categories-block a .bedroom {
+    background: url(../img/categories/cat-v2/bedroom.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.content-block .rooms-categories-block a .livingroom {
+    background: url(../img/categories/cat-v2/livingroom.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.content-block .rooms-categories-block a .kitchen {
+    background: url(../img/categories/cat-v2/kitchen.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-align: center;
+    line-height: 1.4rem;
+}
+.content-block .rooms-categories-block a .bathroom {
+    background: url(../img/categories/cat-v2/bathroom.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.content-block .rooms-categories-block a .childroom {
+    background: url(../img/categories/cat-v2/childroom.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.content-block .rooms-categories-block a .homeclothes {
+    background: url(../img/categories/cat-v2/homeclothes.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-align: center;
+    line-height: 1.4rem;
+}
+
+
+.content-block .rooms-categories-block a .room-category-card .category-label {
+    width: 50%;
+    min-height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, .8);
+    border-radius: 10px;
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+    transition: all .25s;
+}
+.content-block .rooms-categories-block a .room-category-card .category-label p {
+    margin: 0;
+}
+.content-block .rooms-categories-block a .room-category-card:hover .category-label {
+    width: 100%;
+    height: 100%;
+    transition: all .25s;
+}
+
 /*--------------------ABOUT------------------------*/
 
 .about-block .about-card {
